@@ -10,7 +10,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #9D4EDD 0%, #C77DFF 50%, #E0AAFF 100%);
+  background: linear-gradient(135deg, #2E8B57 0%, #3CB371 50%, #90EE90 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -44,12 +44,12 @@ body {
 }
 
 .game-board {
-  background: linear-gradient(135deg, #F3E5FF 0%, #F0E6FF 100%);
+  background: linear-gradient(135deg, #E0F8E0 0%, #F0F8F0 100%);
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.14), 0 15px 35px rgba(0, 0, 0, 0.12);
-  border: 2px solid #C77DFF;
-  border-top: 3px solid #7209B7;
+  border: 2px solid #3CB371;
+  border-top: 3px solid #1B5E3A;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   backdrop-filter: blur(2px);
@@ -60,7 +60,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #3A0A4A;
+  color: #0A3A1A;
   min-height: 36px;
 }
 
@@ -75,38 +75,38 @@ body {
 .square {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #F0E6FF 0%, #F3E5FF 100%);
-  border: 2px solid #C77DFF;
+  background: linear-gradient(135deg, #F0F8F0 0%, #E0F8E0 100%);
+  border: 2px solid #3CB371;
   border-radius: 14px;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  color: #3A0A4A;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(193, 125, 255, 0.2);
+  color: #0A3A1A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(60, 179, 113, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .square:hover {
-  background: linear-gradient(135deg, #E0AAFF 0%, #F3E5FF 100%);
+  background: linear-gradient(135deg, #90EE90 0%, #E0F8E0 100%);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(193, 125, 255, 0.3);
-  border-color: #C77DFF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(60, 179, 113, 0.3);
+  border-color: #3CB371;
 }
 
 .square:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(193, 125, 255, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(193, 125, 255, 0.2);
+  box-shadow: 0 0 0 4px rgba(60, 179, 113, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(60, 179, 113, 0.2);
 }
 
 .square.winning {
-  background: linear-gradient(135deg, #7209B7 0%, #C77DFF 100%);
+  background: linear-gradient(135deg, #1B5E3A 0%, #3CB371 100%);
   color: white;
   animation: pulse 0.5s ease-in-out;
-  box-shadow: 0 8px 16px rgba(193, 125, 255, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-color: #C77DFF;
+  box-shadow: 0 8px 16px rgba(60, 179, 113, 0.4), 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: #3CB371;
 }
 
 @keyframes pulse {
@@ -126,21 +126,21 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(135deg, #7209B7 0%, #C77DFF 100%);
-  border: 2px solid #C77DFF;
+  background: linear-gradient(135deg, #1B5E3A 0%, #3CB371 100%);
+  border: 2px solid #3CB371;
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-top: 2px solid #9D4EDD;
+  border-top: 2px solid #2E8B57;
   backdrop-filter: blur(2px);
 }
 
 .restart-button:hover {
-  background: linear-gradient(135deg, #C77DFF 0%, #9D4EDD 100%);
+  background: linear-gradient(135deg, #3CB371 0%, #2E8B57 100%);
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(193, 125, 255, 0.2);
-  border-color: #C77DFF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(60, 179, 113, 0.2);
+  border-color: #3CB371;
 }
 
 .restart-button:active {
@@ -149,12 +149,12 @@ body {
 }
 
 .game-info {
-  background: linear-gradient(135deg, #F3E5FF 0%, #F0E6FF 100%);
+  background: linear-gradient(135deg, #E0F8E0 0%, #F0F8F0 100%);
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.14), 0 15px 35px rgba(0, 0, 0, 0.12);
-  border: 2px solid #C77DFF;
-  border-top: 3px solid #7209B7;
+  border: 2px solid #3CB371;
+  border-top: 3px solid #1B5E3A;
   min-width: 250px;
   max-height: 400px;
   overflow-y: auto;
@@ -163,7 +163,7 @@ body {
 }
 
 .game-info h3 {
-  color: #3A0A4A;
+  color: #0A3A1A;
   margin-bottom: 15px;
   font-size: 1.3rem;
   text-align: center;
@@ -183,31 +183,31 @@ body {
   width: 100%;
   padding: 12px 16px;
   font-size: 0.9rem;
-  color: #3A0A4A;
-  background: linear-gradient(135deg, #F8F4FF 0%, #FDFBFF 100%);
-  border: 2px solid #C77DFF;
+  color: #0A3A1A;
+  background: linear-gradient(135deg, #F0F8F0 0%, #FAFFFE 100%);
+  border: 2px solid #3CB371;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-align: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(193, 125, 255, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(60, 179, 113, 0.15);
   margin-bottom: 8px;
 }
 
 .game-info button:hover {
-  background: linear-gradient(135deg, #E0AAFF 0%, #F3E5FF 100%);
-  border-color: #C77DFF;
+  background: linear-gradient(135deg, #90EE90 0%, #E0F8E0 100%);
+  border-color: #3CB371;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(193, 125, 255, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(60, 179, 113, 0.25);
 }
 
 .game-info button.current-move {
-  background: linear-gradient(135deg, #7209B7 0%, #C77DFF 100%);
+  background: linear-gradient(135deg, #1B5E3A 0%, #3CB371 100%);
   color: white;
   font-weight: bold;
-  border-color: #C77DFF;
-  border-top: 2px solid #9D4EDD;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(193, 125, 255, 0.3);
+  border-color: #3CB371;
+  border-top: 2px solid #2E8B57;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(60, 179, 113, 0.3);
 }
 
 /* Responsive design */
