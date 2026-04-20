@@ -10,7 +10,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #20B2AA 0%, #48D1CC 50%, #5FD3D3 100%);
+  background: linear-gradient(135deg, #40E0D0 0%, #7FFFD4 50%, #AFEEEE 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -44,11 +44,11 @@ body {
 }
 
 .game-board {
-  background: linear-gradient(135deg, #AFEEEE 0%, #B0E0E6 100%);
+  background: linear-gradient(135deg, #AFEEEE 0%, #BFFEFF 100%);
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.14), 0 15px 35px rgba(0, 0, 0, 0.12);
-  border: 2px solid #48D1CC;
+  border: 2px solid #40E0D0;
   border-top: 3px solid #20B2AA;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
@@ -83,22 +83,22 @@ body {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #2E8B8B;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(32, 178, 170, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(64, 224, 208, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .square:hover {
-  background: linear-gradient(135deg, #AFEEEE 0%, #B0E0E6 100%);
+  background: linear-gradient(135deg, #BFFEFF 0%, #AFEEEE 100%);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(32, 178, 170, 0.3);
-  border-color: #20B2AA;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14), 0 6px 12px rgba(64, 224, 208, 0.3);
+  border-color: #40E0D0;
 }
 
 .square:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(32, 178, 170, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(32, 178, 170, 0.2);
+  box-shadow: 0 0 0 4px rgba(64, 224, 208, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(64, 224, 208, 0.2);
 }
 
 .square.winning {
@@ -126,21 +126,21 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(135deg, #20B2AA 0%, #2E8B8B 100%);
-  border: 2px solid #2E8B8B;
+  background: linear-gradient(135deg, #40E0D0 0%, #20B2AA 100%);
+  border: 2px solid #20B2AA;
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-top: 2px solid #20B2AA;
+  border-top: 2px solid #40E0D0;
   backdrop-filter: blur(2px);
 }
 
 .restart-button:hover {
-  background: linear-gradient(135deg, #48D1CC 0%, #20B2AA 100%);
+  background: linear-gradient(135deg, #7FFFD4 0%, #40E0D0 100%);
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(32, 178, 170, 0.2);
-  border-color: #48D1CC;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 16px 32px rgba(64, 224, 208, 0.2);
+  border-color: #40E0D0;
 }
 
 .restart-button:active {
@@ -149,11 +149,11 @@ body {
 }
 
 .game-info {
-  background: linear-gradient(135deg, #AFEEEE 0%, #B0E0E6 100%);
+  background: linear-gradient(135deg, #AFEEEE 0%, #BFFEFF 100%);
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.14), 0 15px 35px rgba(0, 0, 0, 0.12);
-  border: 2px solid #48D1CC;
+  border: 2px solid #40E0D0;
   border-top: 3px solid #20B2AA;
   min-width: 250px;
   max-height: 400px;
@@ -184,21 +184,21 @@ body {
   padding: 12px 16px;
   font-size: 0.9rem;
   color: #2E8B8B;
-  background: linear-gradient(135deg, #E0FFFF 0%, #AFEEEE 100%);
-  border: 2px solid #48D1CC;
+  background: linear-gradient(135deg, #E0FFFF 0%, #F0FFFF 100%);
+  border: 2px solid #40E0D0;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   text-align: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(32, 178, 170, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(64, 224, 208, 0.15);
   margin-bottom: 8px;
 }
 
 .game-info button:hover {
-  background: linear-gradient(135deg, #AFEEEE 0%, #B0E0E6 100%);
-  border-color: #20B2AA;
+  background: linear-gradient(135deg, #BFFEFF 0%, #AFEEEE 100%);
+  border-color: #40E0D0;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(32, 178, 170, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(64, 224, 208, 0.25);
 }
 
 .game-info button.current-move {
