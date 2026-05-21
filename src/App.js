@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Board from "./components/Board";
-
+//
 const App = () => {
   const [history, setHistory] = useState([
     {
@@ -10,7 +10,7 @@ const App = () => {
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove].squares;
-
+ss
   // Calculate winner and winning line
   const calculateWinner = (squares) => {
     const lines = [
